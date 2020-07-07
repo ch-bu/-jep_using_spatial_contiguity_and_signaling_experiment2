@@ -26,18 +26,18 @@ jmv::ttestIS(
   vars = transitions_cmap_text_ratio,
   effectSize = TRUE)
 
-# Transition likelihood - cmap - prompts
-jmv::ttestIS(
-  formula = transitions_cmap_leitfragen_ratio ~ color_coding,
-  data = data,
-  vars = transitions_cmap_leitfragen_ratio,
-  effectSize = TRUE)
-
 # Transition likelihood - text - cmap
 jmv::ttestIS(
   formula = transitions_text_cmap_ratio ~ color_coding,
   data = data,
   vars = transitions_text_cmap_ratio,
+  effectSize = TRUE)
+
+# Transition likelihood - cmap - prompts
+jmv::ttestIS(
+  formula = transitions_cmap_leitfragen_ratio ~ color_coding,
+  data = data,
+  vars = transitions_cmap_leitfragen_ratio,
   effectSize = TRUE)
 
 # Transition likelihood -prompts - text
